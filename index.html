@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="logocrt.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css" rel="stylesheet" />
+
+
+    <title>Croissant Rouge El Alia</title>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logocrt.png" alt="Logo CRT El Alia"
+                style="width: 50px; height: auto;"><span class="logo-text">CRT
+            </span>El
+            Alia</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">Qui sommes nous</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Nos principes</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Composition du bureau</a></li>
+            <li><a href="#temoignage" onclick="toggleMenu();">Actualité</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banniere" id="banniere">
+        <div class="contenu">
+            <h2>Croissant Rouge Tunisien</h2>
+            <p>En dépit du danger, nous travaillons dans plus de 244 Délégations.
+                Fidèles aux principes de humanité , neutralité, d'impartialité et d'indépendance.</p>
+            <a href="#contact" class="btn1">Contactez nous</a>
+        </div>
+    </section>
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre-texte"><span>A</span>ssociation à but non lucratif</h2>
+                <span style="color: red ; font-weight:bold;"> Le Croissant Rouge Tunisien </span> est une
+                organisation d’intérêt public, créée le 7 octobre 1956,
+                et reconnue par décret du 6 mai 1957 comme organisation bénévole d’aide et de secours auxiliaire
+                des pouvoirs publics dans le domaine humanitaire, conformément aux Conventions de Genève de 1949
+                et ses protocoles additionnels.<span style="color: red; font-weight:bold;"> Le Croissant Rouge Tunisien
+                </span>
+                est devenu membre du mouvement International de la Croix Rouge et du Croissant Rouge le 13 septembre
+                1957.
+            </div>
+            <div class="col50">
+                <div style="display: flex; align-items: center;">
+                    <span style="flex: 1;">Comité Régionaux</span>
+                    <span style="margin-right: 10px;">21</span>
+                </div>
+                <progress id="file" max="100" value="85">85%</progress>
+                <br>
+                <br>
+                <br>
+                <div style="display: flex; align-items: center;">
+                    <span style="flex: 1;">Comité Locaux</span>
+                    <span style="margin-right: 10px;">244</span>
+                </div>
+                <progress id="file" max="100" value="70">70%</progress>
+                <br>
+                <br>
+                <br>
+                <div style="display: flex; align-items: center;">
+                    <span style="flex: 1;">Volontaires Actifs</span>
+                    <span style="margin-right: 10px;">160</span>
+                </div>
+                <progress id="file" max="100" value="75">75%</progress>
+
+            </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="titre">
+            <h2 class="titre-texte">Les principes fondamentaux de la <span>C</span>roix Croissant Rouge</h2>
+
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="images/humanite.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><strong>Humanité</strong>
+
+                    </h3>
+                    <br>
+                    Le Mouvement International de la Croix-Rouge et du Croissant-Rouge a été instauré pour fournir
+                    une assistance humanitaire impartiale aux blessés de guerre, cherchant à prévenir et soulager la
+                    souffrance humaine dans toutes circonstances. Il vise à protéger la vie, la santé et la dignité
+                    des individus, promouvant la compréhension mutuelle, l'amitié, la coopération et la paix durable
+                    entre les peuples.
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/neutralite.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><strong>Neutralité</strong> </h3>
+                    <br>
+                    Pour maintenir la confiance de tous, le mouvement choisit de rester neutre en évitant toute
+                    participation aux hostilités et en s'abstenant de s'impliquer dans des controverses politiques,
+                    raciales, religieuses et idéologiques.
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/independence.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><strong>Independance</strong> </h3>
+                    <br>
+                    Le Mouvement maintient son indépendance tout en collaborant en tant qu'auxiliaire des autorités
+                    publiques dans des actions humanitaires, conformément aux lois de chaque pays. Malgré cette
+                    collaboration, les Sociétés Nationales conservent une autonomie essentielle pour agir en accord avec
+                    les principes fondamentaux du Mouvement.
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/unite.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><strong>Unité</strong></h3>
+                </div>
+                <br>
+
+                Il ne peut y avoir qu'une seule société de la Croix-Rouge ou du Croissant-Rouge
+                dans un même pays. Elle doit être ouverte à tous et étendre son action
+                humanitaire au territoire entier.
+
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/universalite.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><strong>Universalité</strong></h3>
+                </div>
+                <br>
+
+                Le Mouvement international de la Croix-Rouge et du Croissant-Rouge, au sein
+                duquel toutes les sociétés ont des droits égaux et le devoir de s'entraider, est
+                universel.
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/impartialitee.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><Strong>Impartialité</Strong></h3>
+                </div>
+                <br>
+
+                Il ne fait aucune distinction de nationalité, de race, de religion, de condition
+                sociale et d'appartenance politique. Il s'applique seulement à secourir les
+                individus à la mesure de leur souffrance et à subvenir par priorité aux
+                détresses les plus urgentes.
+
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/volontariat.png" alt="">
+                </div>
+                <div class="text">
+                    <h3><Strong>Volontariat</Strong></h3>
+                </div>
+                <br>
+
+                Il est un Mouvement de secours volontaire et désintéressé.
+
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <section class="expert" id="expert">
+        <div class="titre">
+            <h2 class="titre-texte"><span>A</span>ctualité</h2>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Achraf BEN AISSA<br><span style="color:#CE6A6B"> Président</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Khawla BOUZOUITA<br><span style="color:#CE6A6B">Vice Président</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Soufiene WACHARINE<br><span style="color:#CE6A6B">Secrétaire général</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Sadok DEROUICHE <br><span style="color:#CE6A6B">Trésorier</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Ali BEN SALEM <br><span style="color:#CE6A6B">Responsable Social</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Houdaila TLICH <br><span style="color:#CE6A6B">Responsable Santé</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Yassine LAHBIB<br><span style="color:#CE6A6B">Responsable Média</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Charaf BLIDI<br><span style="color:#CE6A6B">Responsable Secourisme</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Saif KACHOUT <br><span style="color:#CE6A6B">Responsable Jeunesse</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Akila BOUGOULA <br><span style="color:#CE6A6B">Responsable Gestion Des Catastrophes</span></h3>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+    <section class="temoignage" id="temoignage">
+        <div class="titre blanc">
+            <h2 class="titre-texte"><span>B</span>ureau</h2>
+            <p>2021/2025</p>
+
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <p></p>
+                    <h3>Achraf BEN AISSA<br><span style="color: #000;"> Président</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Khawla BOUZOUITA<br><span style="color: #000;">Vice Président</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Soufiene WACHARINE<br><span style="color:#000">Secrétaire général</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Sadok DEROUICHE<br><span style="color:#000">Trésorier</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Houdaila TLICH<br><span style="color:#000">Responsable Santé</span></h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Ali BEN SALEM<br><span style="color:#000">Responsable Social</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Charaf BLIDI<br><span style="color:#000">Responsable Secourisme</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Yassine LAHBIB<br><span style="color:#000">Responsable Média</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Akila BOUGHOULA<br><span style="color:#000">Responsable Gestion Des Catastrophes</span></h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/" alt="">
+                </div>
+                <div class="text">
+                    <h3>Saif KACHOUT<br><span style="color:#000">Responsable Jeunesse</span></h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="titre noir">
+            <h2 class="titre-texte"><span>C</span>ontact</h2>
+            <p></p>
+        </div>
+        <div class="contactform">
+            <h3>Envoyer un message</h3>
+            <form id="myForm" action="envoi_email.php" method="post">
+                <div class="inputboite">
+                    <input type="text" name="nom" id="nom" placeholder="Nom" required>
+                </div>
+
+                <div class="inputboite">
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="inputboite">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>© Copyright 2024 <a href="https://www.facebook.com/croissantrouge.elalia">........... </a>. Tous droits
+            reservé</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const tmenuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
